@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send, Linkedin } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -76,6 +76,23 @@ const Kontakt = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Plats</h3>
                       <p className="text-muted-foreground">Malmö, Sverige</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
+                      <Linkedin className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">LinkedIn</h3>
+                      <a 
+                        href="https://www.linkedin.com/in/angelina-lindqvist/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
+                      >
+                        Besök min profil
+                      </a>
                     </div>
                   </div>
                 </div>
