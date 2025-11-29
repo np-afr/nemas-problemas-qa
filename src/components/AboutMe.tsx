@@ -1,4 +1,4 @@
-import { Award, Clock, Target, Lightbulb } from "lucide-react";
+import { Award, Briefcase, Lightbulb } from "lucide-react";
 
 import { useMemo } from "react";
 
@@ -34,7 +34,7 @@ const getHighlights = (experience: { years: number; months: number; days: number
     description: "Inom IT",
   },
   {
-    icon: Target,
+    icon: Briefcase,
     title: "6",
     description: "konsultprojekt",
   },
