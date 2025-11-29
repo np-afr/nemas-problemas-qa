@@ -17,9 +17,15 @@ const Schack = () => {
                 <Crown className="h-8 w-8 text-accent" />
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Artiklar</h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">I dagsläget skriver jag artiklar för</p>
-              <p className="text-gradient">Tidskrift För Schack</p>
-              <p>, som kan hittas</p> <p>här</p>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas{" "}
+              </p>
+              <p
+                className="text-lg md:text-xl text-muted-foreground mb-8"
+                href="https://schack.se/forbundet/tfs/arkiv/"
+              >
+                här
+              </p>
             </div>
           </div>
         </section>
