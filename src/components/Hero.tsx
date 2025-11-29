@@ -27,7 +27,7 @@ const Hero = () => {
               animationDelay: "0.2s",
             }}
           >
-            — Konsultande inom QA, journalistik och träning
+            — Kvalitetsentusiast, sprallig träningsinstruktör & nördig schackskribent
           </p>
 
           {/* Main Headline */}
