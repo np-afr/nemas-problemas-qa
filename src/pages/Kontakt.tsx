@@ -65,7 +65,7 @@ const Kontakt = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">E-post</h3>
-                      <p className="text-muted-foreground">angelina ( at ) nemasproblemas.com</p>
+                      <p className="text-muted-foreground">hej@nemasproblemas.com</p>
                     </div>
                   </div>
 
