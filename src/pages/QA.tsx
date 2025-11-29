@@ -3,6 +3,17 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Target, Users, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useMemo } from "react";
+
+const calculateYearsOfExperience = () => {
+  const start = new Date(2018, 2, 16);
+  const today = new Date();
+  let years = 0;
+  while (new Date(start.getFullYear() + years + 1, start.getMonth(), start.getDate()) <= today) {
+    years++;
+  }
+  return years;
+};
 
 const services = [
   {
@@ -28,6 +39,8 @@ const services = [
 ];
 
 const QA = () => {
+  const years = useMemo(() => calculateYearsOfExperience(), []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -40,7 +53,7 @@ const QA = () => {
                 Kvalitetssäkring som gör skillnad
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Med över 10 års erfarenhet hjälper jag företag att leverera mjukvara med högre kvalitet, 
+                Med över {years} års erfarenhet hjälper jag företag att leverera mjukvara med högre kvalitet, 
                 färre buggar och nöjdare användare.
               </p>
               <Link to="/kontakt">
