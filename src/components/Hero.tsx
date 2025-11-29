@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <img src={logo} alt="Nemas Problemas" className="h-24 md:h-32 lg:h-40 w-auto mx-auto animate-float" />
+            <img src={logo} alt="Nemas Problemas" className="h-32 md:h-44 lg:h-56 w-auto mx-auto animate-float" />
           </div>
 
           {/* Tagline */}
