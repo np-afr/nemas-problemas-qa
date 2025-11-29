@@ -39,7 +39,7 @@ const Hero = () => {
           >
             Jag hittar buggarna,
             <br />
-            <span className="text-gradient">så du slipper.</span>
+            <span className="text-gradient">så du kan sova gott om natten.</span>
           </h1>
 
           {/* Subheadline */}
