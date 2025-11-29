@@ -38,15 +38,15 @@ const AboutMe = () => {
               <span className="text-foreground font-medium"> Inga problem, bara lösningar.</span>
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Med över 15 års erfarenhet inom kvalitetssäkring har jag arbetat med allt från fintech till e-handel, från
-              startups till enterprise.
+              Med över 15 års erfarenhet inom kvalitetssäkring har jag arbetat med allt från fintech till e-handel.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Min filosofi är enkel:{" "}
               <span className="text-gradient font-semibold">
-                kvalitet är inget som händer av en slump — det är ett åtagande.
+                kvalitet är inget som händer av en slump — det är ett ständigt arbete.
               </span>{" "}
-              Varje bugg som hittas innan release är en kund som förblir nöjd.
+              Buggar finns i kod, i processer, i samtal mellan människor och min passion är att sandpappra bort dem
+              tills vi har en robust och användarvänlig produkt.
             </p>
           </div>
 
