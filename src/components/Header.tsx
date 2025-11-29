@@ -7,9 +7,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Why Us", href: "#why-us" },
-    { label: "Contact", href: "#contact" },
+    { label: "Om Mig", href: "#om-mig" },
+    { label: "Tjänster", href: "#tjanster" },
+    { label: "Kontakt", href: "#kontakt" },
   ];
 
   return (
@@ -27,13 +27,13 @@ const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-foreground/80 hover:text-foreground font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-brand-orange after:transition-all hover:after:w-full"
+                className="text-muted-foreground hover:text-foreground font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all hover:after:w-full"
               >
                 {link.label}
               </a>
             ))}
             <Button variant="brand" size="default">
-              Get a Quote
+              Kontakta Mig
             </Button>
           </nav>
 
@@ -41,7 +41,7 @@ const Header = () => {
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label="Öppna meny"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6 text-foreground" />
@@ -59,14 +59,14 @@ const Header = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-foreground/80 hover:text-foreground font-medium py-2 transition-colors"
+                  className="text-muted-foreground hover:text-foreground font-medium py-2 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </a>
               ))}
               <Button variant="brand" className="w-full mt-2">
-                Get a Quote
+                Kontakta Mig
               </Button>
             </div>
           </nav>
