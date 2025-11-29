@@ -23,6 +23,7 @@ const Schack = () => {
               <a
                 className="text-lg md:text-xl text-muted-foreground mb-8"
                 href="https://schack.se/forbundet/tfs/arkiv/"
+                target="_blank"
               >
                 här
               </a>
