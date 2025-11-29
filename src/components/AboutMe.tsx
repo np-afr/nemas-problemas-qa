@@ -1,10 +1,33 @@
 import { Award, Clock, Target, Lightbulb } from "lucide-react";
+import { useMemo } from "react";
 
-const highlights = [
+const calculateExperience = () => {
+  const startDate = new Date(2018, 2, 16); // March 16, 2018
+  const today = new Date();
+  
+  let years = today.getFullYear() - startDate.getFullYear();
+  let months = today.getMonth() - startDate.getMonth();
+  let days = today.getDate() - startDate.getDate();
+  
+  if (days < 0) {
+    months--;
+    const lastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+    days += lastMonth.getDate();
+  }
+  
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+  
+  return { years, months, days };
+};
+
+const getHighlights = (experience: { years: number; months: number; days: number }) => [
   {
     icon: Award,
-    title: "15+ År",
-    description: "Erfarenhet inom QA",
+    title: `${experience.years} år, ${experience.days} dagar`,
+    description: "Erfarenhet inom IT",
   },
   {
     icon: Target,
@@ -19,6 +42,9 @@ const highlights = [
 ];
 
 const AboutMe = () => {
+  const experience = useMemo(() => calculateExperience(), []);
+  const highlights = useMemo(() => getHighlights(experience), [experience]);
+
   return (
     <section id="om-mig" className="py-20 md:py-32 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +65,7 @@ const AboutMe = () => {
               <span className="text-foreground font-medium"> Inga problem, bara lösningar.</span>
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Med över 15 års erfarenhet inom kvalitetssäkring har jag arbetat med allt från fintech till e-handel.
+              Med över {experience.years} års erfarenhet inom kvalitetssäkring har jag arbetat med allt från fintech till e-handel.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Min filosofi är enkel:{" "}
