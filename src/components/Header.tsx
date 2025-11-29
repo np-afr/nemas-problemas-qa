@@ -8,7 +8,9 @@ const Header = () => {
 
   const navLinks = [
     { label: "Om Mig", href: "#om-mig" },
-    { label: "Tjänster", href: "#tjanster" },
+    { label: "QA", href: "#tjanster" },
+    { label: "Schack", href: "schack" },
+    { label: "Träningsklasser", href: "fitness" },
     { label: "Kontakt", href: "#kontakt" },
   ];
 
@@ -38,16 +40,8 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Öppna meny"
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-foreground" />
-            ) : (
-              <Menu className="h-6 w-6 text-foreground" />
-            )}
+          <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Öppna meny">
+            {isMenuOpen ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}
           </button>
         </div>
 
