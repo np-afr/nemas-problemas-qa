@@ -1,15 +1,40 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import logo from "@/assets/nemas-problemas-logo.png";
+import { ArrowRight, Search, Bug } from "lucide-react";
+
 const Hero = () => {
   return <section className="relative min-h-screen flex flex-col bg-gradient-hero overflow-hidden pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto ">
-          {/* Logo */}
-          <div style={{
-          animationDelay: "0.1s"
-        }} className="mb-8 opacity-0 animate-fade-in text-center">
-            <img src={logo} alt="Nemas Problemas" className="h-80 md:h-[28rem] lg:h-[36rem] w-auto mx-auto animate-float" />
+          {/* Animated Logo */}
+          <div className="mb-8 text-center">
+            <div className="relative inline-block">
+              {/* Main title text */}
+              <h2 
+                className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground opacity-0 animate-fade-in"
+                style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}
+              >
+                Nemas Problemas
+              </h2>
+              
+              {/* Magnifying glass with bug - animates in after text */}
+              <div 
+                className="absolute -right-4 md:-right-8 top-1/2 -translate-y-1/2 opacity-0 animate-fade-in"
+                style={{ animationDelay: "1s", animationFillMode: "forwards" }}
+              >
+                <div className="relative animate-float">
+                  <Search 
+                    className="h-16 w-16 md:h-24 md:w-24 lg:h-32 lg:w-32 text-accent" 
+                    strokeWidth={1.5}
+                  />
+                  {/* Bug inside magnifying glass */}
+                  <Bug 
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 text-foreground opacity-0 animate-fade-in" 
+                    style={{ animationDelay: "1.5s", animationFillMode: "forwards" }}
+                    strokeWidth={2}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Tagline */}
