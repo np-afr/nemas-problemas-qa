@@ -6,24 +6,24 @@
 
 @layer base {
   :root {
-    /* Clean minimal palette - no beige */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 12%;
+    /* Warm beige palette */
+    --background: 35 30% 96%;
+    --foreground: 25 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 12%;
+    --card: 35 35% 98%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 12%;
+    --popover: 35 35% 98%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 0 0% 12%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 25 25% 18%;
+    --primary-foreground: 35 30% 96%;
 
-    --secondary: 0 0% 94%;
-    --secondary-foreground: 0 0% 12%;
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 25 25% 15%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 35 20% 94%;
+    --muted-foreground: 25 15% 45%;
 
     --accent: 24 85% 50%;
     --accent-foreground: 0 0% 100%;
@@ -31,16 +31,18 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
     --ring: 24 85% 50%;
 
     --radius: 0.75rem;
 
-    /* Brand colors - keeping orange accent */
+    /* Brand colors */
     --brand-orange: 24 85% 50%;
     --brand-orange-light: 24 85% 60%;
     --brand-orange-dark: 24 85% 40%;
+    --brand-cream: 35 30% 96%;
+    --brand-warm-gray: 25 15% 45%;
   }
 }
 
