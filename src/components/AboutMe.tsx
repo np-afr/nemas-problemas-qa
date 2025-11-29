@@ -1,33 +1,42 @@
 import { Award, Clock, Target, Lightbulb } from "lucide-react";
+
 import { useMemo } from "react";
 
 const calculateExperience = () => {
-  const startDate = new Date(2018, 2, 16); // March 16, 2018
+  const start = new Date(2018, 2, 16);
   const today = new Date();
-  
-  let years = today.getFullYear() - startDate.getFullYear();
-  let months = today.getMonth() - startDate.getMonth();
-  let days = today.getDate() - startDate.getDate();
-  
-  if (days < 0) {
-    months--;
-    const lastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
-    days += lastMonth.getDate();
+
+  let years = 0;
+  let months = 0;
+
+  // Räkna år
+  while (
+    new Date(start.getFullYear() + years + 1, start.getMonth(), start.getDate()) <= today
+  ) {
+    years++;
   }
-  
-  if (months < 0) {
-    years--;
-    months += 12;
+
+  // Räkna månader
+  while (
+    new Date(start.getFullYear() + years, start.getMonth() + months + 1, start.getDate()) <= today
+  ) {
+    months++;
   }
-  
+
+  // Räkna dagar
+  const lastPeriod = new Date(start.getFullYear() + years, start.getMonth() + months, start.getDate());
+  const diffMs = today.getTime() - lastPeriod.getTime();
+  const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
   return { years, months, days };
 };
+
 
 const getHighlights = (experience: { years: number; months: number; days: number }) => [
   {
     icon: Award,
     title: `${experience.years} år, ${experience.days} dagar`,
-    description: "Erfarenhet inom IT",
+    description: "Inom IT",
   },
   {
     icon: Target,
