@@ -7,11 +7,6 @@ const services = [
     description: "Skräddarsydda QA-strategier för ditt projekt, med fullständig täckning och effektiva testprocesser.",
   },
   {
-    icon: Users,
-    title: "QA Teamförstärkning",
-    description: "Jag går in i ditt team och bidrar med expertis och nya perspektiv direkt från dag ett.",
-  },
-  {
     icon: Cog,
     title: "Testautomation",
     description: "Robusta automationsramverk som snabbar upp testcykler och fångar regressioner tidigt.",
