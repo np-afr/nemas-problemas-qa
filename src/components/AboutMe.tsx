@@ -10,16 +10,12 @@ const calculateExperience = () => {
   let months = 0;
 
   // Räkna år
-  while (
-    new Date(start.getFullYear() + years + 1, start.getMonth(), start.getDate()) <= today
-  ) {
+  while (new Date(start.getFullYear() + years + 1, start.getMonth(), start.getDate()) <= today) {
     years++;
   }
 
   // Räkna månader
-  while (
-    new Date(start.getFullYear() + years, start.getMonth() + months + 1, start.getDate()) <= today
-  ) {
+  while (new Date(start.getFullYear() + years, start.getMonth() + months + 1, start.getDate()) <= today) {
     months++;
   }
 
@@ -31,11 +27,10 @@ const calculateExperience = () => {
   return { years, months, days };
 };
 
-
 const getHighlights = (experience: { years: number; months: number; days: number }) => [
   {
     icon: Award,
-    title: `${experience.years} år, ${experience.days} dagar`,
+    title: `${experience.years} år, ${experience.months} månader`,
     description: "Inom IT",
   },
   {
@@ -74,7 +69,8 @@ const AboutMe = () => {
               <span className="text-foreground font-medium"> Inga problem, bara lösningar.</span>
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Med över {experience.years} års erfarenhet inom kvalitetssäkring har jag arbetat med allt från fintech till e-handel.
+              Med över {experience.years} års erfarenhet inom kvalitetssäkring har jag arbetat med allt från fintech
+              till e-handel.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Min filosofi är enkel:{" "}
