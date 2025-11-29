@@ -1,65 +1,65 @@
-import { ClipboardCheck, Users, Cog, FileSearch, Zap, BarChart3 } from "lucide-react";
+import { ClipboardCheck, Cog, FileSearch, Zap, BarChart3, Users } from "lucide-react";
 
 const services = [
   {
     icon: ClipboardCheck,
-    title: "Test Strategy & Planning",
-    description: "Comprehensive QA strategies tailored to your project needs, ensuring complete coverage and efficient testing processes.",
+    title: "Teststrategi & Planering",
+    description: "Skräddarsydda QA-strategier för ditt projekt, med fullständig täckning och effektiva testprocesser.",
   },
   {
     icon: Users,
-    title: "QA Team Augmentation",
-    description: "Skilled QA consultants who integrate seamlessly with your team, bringing expertise and fresh perspectives.",
+    title: "QA Teamförstärkning",
+    description: "Jag går in i ditt team och bidrar med expertis och nya perspektiv direkt från dag ett.",
   },
   {
     icon: Cog,
-    title: "Test Automation",
-    description: "Build robust automation frameworks that accelerate testing cycles and catch regression bugs early.",
+    title: "Testautomation",
+    description: "Robusta automationsramverk som snabbar upp testcykler och fångar regressioner tidigt.",
   },
   {
     icon: FileSearch,
-    title: "Manual Testing",
-    description: "Thorough exploratory and scripted testing by experienced professionals who think like your users.",
+    title: "Manuell Testning",
+    description: "Grundlig utforskande och skriptad testning — jag tänker som dina användare.",
   },
   {
     icon: Zap,
-    title: "Performance Testing",
-    description: "Load, stress, and endurance testing to ensure your application performs flawlessly under any conditions.",
+    title: "Prestandatestning",
+    description: "Last-, stress- och uthållighetstester för att säkerställa att din app presterar under alla förhållanden.",
   },
   {
     icon: BarChart3,
-    title: "QA Process Audit",
-    description: "Evaluate and optimize your existing QA processes to improve efficiency and testing effectiveness.",
+    title: "QA Processrevision",
+    description: "Utvärdering och optimering av era befintliga QA-processer för bättre effektivitet.",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 md:py-32 bg-card">
+    <section id="tjanster" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-brand-orange font-semibold text-sm uppercase tracking-wider mb-4">
-            Our Services
+          <p className="text-accent font-medium text-sm uppercase tracking-wider mb-4">
+            Tjänster
           </p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Quality Assurance Solutions
+            Vad kan jag hjälpa dig med?
           </h2>
           <p className="text-lg text-muted-foreground">
-            From strategy to execution, we provide end-to-end QA services that help you deliver exceptional software.
+            Från strategi till exekvering — jag erbjuder kompletta QA-tjänster som hjälper dig leverera exceptionell mjukvara.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group bg-background rounded-2xl p-8 shadow-warm hover-lift cursor-pointer"
+              className="group bg-card rounded-2xl p-8 shadow-soft hover-lift cursor-pointer border border-border/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-brand-orange/10 flex items-center justify-center mb-6 group-hover:bg-brand-orange group-hover:scale-110 transition-all duration-300">
-                <service.icon className="h-7 w-7 text-brand-orange group-hover:text-accent-foreground transition-colors" />
+              <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
+                <service.icon className="h-7 w-7 text-accent group-hover:text-accent-foreground transition-colors" />
               </div>
               <h3 className="font-display text-xl font-bold text-foreground mb-3">
                 {service.title}

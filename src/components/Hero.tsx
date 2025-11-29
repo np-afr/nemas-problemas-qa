@@ -1,16 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Bug, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import logo from "@/assets/nemas-problemas-logo.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-20">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-brand-orange/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-brand-orange/10 rounded-full blur-3xl" />
-      </div>
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
@@ -23,47 +17,32 @@ const Hero = () => {
           </div>
 
           {/* Tagline */}
-          <p className="text-brand-orange font-semibold text-lg md:text-xl mb-4 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Quality Assurance Consultancy
+          <p className="text-accent font-medium text-lg md:text-xl mb-4 opacity-0 animate-fade-in italic" style={{ animationDelay: "0.2s" }}>
+            — QA Konsult
           </p>
 
           {/* Main Headline */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            We Find the Bugs,{" "}
-            <span className="text-gradient">So You Don't Have To</span>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-6 opacity-0 animate-fade-in leading-tight" style={{ animationDelay: "0.3s" }}>
+            Jag hittar buggarna,
+            <br />
+            <span className="text-gradient">så du slipper.</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            Expert QA consultants helping teams deliver flawless software. 
-            From test strategy to execution, we've got your quality covered.
+            Erfaren QA-konsult som hjälper team att leverera mjukvara utan bekymmer. 
+            Från teststrategi till exekvering — jag har koll på kvaliteten.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 opacity-0 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <Button variant="brand" size="xl">
-              Start Your QA Journey
+              Låt oss prata
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="brand-outline" size="xl">
-              Learn More
+              Läs mer om mig
             </Button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center gap-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Shield className="h-5 w-5 text-brand-orange" />
-              <span className="text-sm font-medium">100% Quality Focused</span>
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Bug className="h-5 w-5 text-brand-orange" />
-              <span className="text-sm font-medium">10,000+ Bugs Found</span>
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <CheckCircle className="h-5 w-5 text-brand-orange" />
-              <span className="text-sm font-medium">50+ Happy Clients</span>
-            </div>
           </div>
         </div>
       </div>
