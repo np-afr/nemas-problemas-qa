@@ -10,7 +10,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <img src={logo} alt="Nemas Problemas" className="h-12 w-auto mb-4 brightness-0 invert opacity-90 mx-auto md:mx-0" />
+            <img
+              src={logo}
+              alt="Nemas Problemas"
+              className="h-12 w-auto mb-4 brightness-0 invert opacity-90 mx-auto md:mx-0"
+            />
             <p className="text-primary-foreground/70 max-w-sm">
               Erfaren QA-konsult som hjälper team leverera mjukvara utan bekymmer.
             </p>
@@ -19,8 +23,8 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col items-center md:items-end gap-4">
             <div className="flex gap-4">
-              <a 
-                href="https://linkedin.com" 
+              <a
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
@@ -28,17 +32,15 @@ const Footer = () => {
               >
                 <Linkedin className="h-5 w-5 text-primary-foreground" />
               </a>
-              <a 
-                href="mailto:hej@nemasproblemas.se" 
+              <a
+                href="mailto:hej@nemasproblemas.se"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5 text-primary-foreground" />
               </a>
             </div>
-            <p className="text-primary-foreground/50 text-sm">
-              hej@nemasproblemas.se
-            </p>
+            <p className="text-primary-foreground/50 text-sm">angelina@nemasproblemas.com</p>
           </div>
         </div>
 
