@@ -18,14 +18,14 @@ const Schack = () => {
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Artiklar</h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas{" "}
+                I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas
               </p>
-              <p
+              <a
                 className="text-lg md:text-xl text-muted-foreground mb-8"
                 href="https://schack.se/forbundet/tfs/arkiv/"
               >
                 här
-              </p>
+              </a>
             </div>
           </div>
         </section>
