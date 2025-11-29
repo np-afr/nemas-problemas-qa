@@ -51,7 +51,7 @@ const AboutMe = () => {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
             {highlights.map((item, index) => (
               <div key={item.title} className="bg-background rounded-2xl p-6 text-center shadow-soft hover-lift">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mx-auto mb-4">
