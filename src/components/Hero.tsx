@@ -16,7 +16,7 @@ const Hero = () => {
             <img
               src={logo}
               alt="Nemas Problemas"
-              className="h-80 md:h-[28rem] lg:h-[36rem] w-auto mx-auto animate-float"
+              className="h-80 md:h-[28rem] lg:h-[36rem] w-auto mx-auto animate-float border-0 outline-none"
             />
           </div>
 
