@@ -37,9 +37,7 @@ const Hero = () => {
               animationDelay: "0.3s",
             }}
           >
-            Hjälper team
-            <br />
-            <span className="text-gradient">att skapa stabila och pålitliga system.</span>
+            <span className="text-gradient">Hjälper team att skapa stabila och pålitliga system.</span>
           </h1>
 
           {/* Subheadline */}
