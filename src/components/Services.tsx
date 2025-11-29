@@ -21,16 +21,6 @@ const services = [
     title: "Manuell Testning",
     description: "Grundlig utforskande och skriptad testning — jag tänker som dina användare.",
   },
-  {
-    icon: Zap,
-    title: "Prestandatestning",
-    description: "Last-, stress- och uthållighetstester för att säkerställa att din app presterar under alla förhållanden.",
-  },
-  {
-    icon: BarChart3,
-    title: "QA Processrevision",
-    description: "Utvärdering och optimering av era befintliga QA-processer för bättre effektivitet.",
-  },
 ];
 
 const Services = () => {
@@ -39,14 +29,13 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-accent font-medium text-sm uppercase tracking-wider mb-4">
-            Tjänster
-          </p>
+          <p className="text-accent font-medium text-sm uppercase tracking-wider mb-4">Tjänster</p>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Vad kan jag hjälpa dig med?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Från strategi till exekvering — jag erbjuder kompletta QA-tjänster som hjälper dig leverera exceptionell mjukvara.
+            Från strategi till exekvering — jag erbjuder kompletta QA-tjänster som hjälper dig leverera exceptionell
+            mjukvara.
           </p>
         </div>
 
@@ -61,12 +50,8 @@ const Services = () => {
               <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
                 <service.icon className="h-7 w-7 text-accent group-hover:text-accent-foreground transition-colors" />
               </div>
-              <h3 className="font-display text-xl font-bold text-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
+              <h3 className="font-display text-xl font-bold text-foreground mb-3">{service.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>
