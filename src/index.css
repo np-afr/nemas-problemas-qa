@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    /* Warm beige palette */
-    --background: 35 30% 96%;
+    /* Warm beige palette - more saturated beige */
+    --background: 38 40% 92%;
     --foreground: 25 25% 15%;
 
-    --card: 35 35% 98%;
+    --card: 38 45% 95%;
     --card-foreground: 25 25% 15%;
 
-    --popover: 35 35% 98%;
+    --popover: 38 45% 95%;
     --popover-foreground: 25 25% 15%;
 
     --primary: 25 25% 18%;
-    --primary-foreground: 35 30% 96%;
+    --primary-foreground: 38 40% 92%;
 
-    --secondary: 35 25% 92%;
+    --secondary: 38 35% 88%;
     --secondary-foreground: 25 25% 15%;
 
-    --muted: 35 20% 94%;
+    --muted: 38 30% 90%;
     --muted-foreground: 25 15% 45%;
 
     --accent: 24 85% 50%;
