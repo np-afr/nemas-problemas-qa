@@ -34,7 +34,8 @@ const AboutMe = () => {
           {/* Personal intro */}
           <div className="prose prose-lg max-w-none text-center mb-16">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              Hej! Jag heter Angelina och driver Nemas Problemas — ett namn som säger allt om min approach till QA.
+              Hej! Jag heter Angelina och driver Nemas Problemas — ett namn som säger allt om min approach till
+              projekten jag tar på mig.
               <span className="text-foreground font-medium"> Inga problem, bara lösningar.</span>
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
