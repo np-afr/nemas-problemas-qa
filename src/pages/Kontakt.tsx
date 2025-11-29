@@ -85,9 +85,9 @@ const Kontakt = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">LinkedIn</h3>
-                      <a 
-                        href="https://www.linkedin.com/in/angelina-lindqvist/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.linkedin.com/in/angelina-fransson/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
                       >
