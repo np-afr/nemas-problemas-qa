@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-end gap-4">
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/angelina-fransson/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors"
