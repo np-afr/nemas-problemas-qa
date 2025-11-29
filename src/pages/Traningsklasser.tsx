@@ -22,17 +22,16 @@ const Traningsklasser = () => {
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
                 Idag är jag instruktör på SATS och mina klasser kan hittas nedan
               </p>
-              <Link to="/kontakt">
-                <Button
-                  variant="brand"
-                  size="xl"
-                  href="https://www.sats.se/boka?club-search=&class-search=&instructor-search=angelina&instructors=Angelina+Fransson"
-                  target="_blank"
-                >
+              <a
+                href="https://www.sats.se/boka?club-search=&class-search=&instructor-search=angelina&instructors=Angelina+Fransson"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="brand" size="xl">
                   Schema
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
