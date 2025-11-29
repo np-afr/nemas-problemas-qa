@@ -11,7 +11,6 @@ const Header = () => {
     { label: "QA", href: "#tjanster" },
     { label: "Schack", href: "schack" },
     { label: "Träningsklasser", href: "fitness" },
-    { label: "Kontakt", href: "#kontakt" },
   ];
 
   return (
