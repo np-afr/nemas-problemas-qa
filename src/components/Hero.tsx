@@ -37,9 +37,9 @@ const Hero = () => {
               animationDelay: "0.3s",
             }}
           >
-            Jag hittar buggarna,
+            Hjälper team
             <br />
-            <span className="text-gradient">så du kan sova gott om natten.</span>
+            <span className="text-gradient">att skapa stabila och pålitliga system.</span>
           </h1>
 
           {/* Subheadline */}
