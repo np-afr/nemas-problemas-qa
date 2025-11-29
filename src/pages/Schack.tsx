@@ -17,17 +17,17 @@ const Schack = () => {
                 <Crown className="h-8 w-8 text-accent" />
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Artiklar</h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas
+              <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas{" "}
+                <a
+                  className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
+                  href="https://schack.se/forbundet/tfs/arkiv/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  här
+                </a>
               </p>
-              <a
-                className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
-                href="https://schack.se/forbundet/tfs/arkiv/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                här
-              </a>
             </div>
           </div>
         </section>
