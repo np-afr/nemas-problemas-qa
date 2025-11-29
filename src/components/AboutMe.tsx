@@ -30,13 +30,13 @@ const calculateExperience = () => {
 const getHighlights = (experience: { years: number; months: number; days: number }) => [
   {
     icon: Award,
-    title: `${experience.years} år, ${experience.months} månader`,
+    title: `${experience.years} år, ${experience.months} mån`,
     description: "Inom IT",
   },
   {
     icon: Target,
-    title: "10,000+",
-    description: "Buggar hittade",
+    title: "6",
+    description: "konsultprojekt",
   },
   {
     icon: Lightbulb,
