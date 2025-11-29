@@ -9,35 +9,43 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
           <div className="mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <img 
-              src={logo} 
-              alt="Nemas Problemas" 
-              className="h-24 md:h-32 lg:h-40 w-auto mx-auto animate-float"
-            />
+            <img src={logo} alt="Nemas Problemas" className="h-24 md:h-32 lg:h-40 w-auto mx-auto animate-float" />
           </div>
 
           {/* Tagline */}
-          <p className="text-accent font-medium text-lg md:text-xl mb-4 opacity-0 animate-fade-in italic" style={{ animationDelay: "0.2s" }}>
+          <p
+            className="text-accent font-medium text-lg md:text-xl mb-4 opacity-0 animate-fade-in italic"
+            style={{ animationDelay: "0.2s" }}
+          >
             — QA Konsult
           </p>
 
           {/* Main Headline */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-6 opacity-0 animate-fade-in leading-tight" style={{ animationDelay: "0.3s" }}>
+          <h1
+            className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-6 opacity-0 animate-fade-in leading-tight"
+            style={{ animationDelay: "0.3s" }}
+          >
             Jag hittar buggarna,
             <br />
             <span className="text-gradient">så du slipper.</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            Erfaren QA-konsult som hjälper team att leverera mjukvara utan bekymmer. 
-            Från teststrategi till exekvering — jag har koll på kvaliteten.
+          <p
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in"
+            style={{ animationDelay: "0.4s" }}
+          >
+            Erfaren QA-konsult som hjälper team att leverera mjukvara utan bekymmer. Från teststrategi till exekvering —
+            jag har koll på kvaliteten.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in"
+            style={{ animationDelay: "0.5s" }}
+          >
             <Button variant="brand" size="xl">
-              Låt oss prata
+              Let's talk!
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="brand-outline" size="xl">
@@ -50,8 +58,8 @@ const Hero = () => {
       {/* Bottom wave */}
       <div className="absolute bottom-0 left-0 right-0">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-          <path 
-            d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" 
+          <path
+            d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
             fill="hsl(var(--card))"
           />
         </svg>

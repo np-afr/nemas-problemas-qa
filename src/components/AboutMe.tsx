@@ -10,12 +10,7 @@ const highlights = [
     icon: Target,
     title: "10,000+",
     description: "Buggar hittade",
-  },
-  {
-    icon: Clock,
-    title: "50+",
-    description: "Nöjda kunder",
-  },
+  }
   {
     icon: Lightbulb,
     title: "100%",
