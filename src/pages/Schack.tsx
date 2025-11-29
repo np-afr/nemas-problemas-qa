@@ -4,6 +4,29 @@ import { Button } from "@/components/ui/button";
 import { Crown, Users, GraduationCap, Trophy, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const offerings = [
+  {
+    icon: Users,
+    title: "Privatlektioner",
+    description: "Skräddarsydda lektioner anpassade efter din nivå och mål.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Gruppträning",
+    description: "Lär dig schack tillsammans med andra i en social miljö.",
+  },
+  {
+    icon: Trophy,
+    title: "Tävlingsförberedelse",
+    description: "Förbered dig inför tävlingar med strategisk träning.",
+  },
+  {
+    icon: Crown,
+    title: "Analys av partier",
+    description: "Gå igenom dina partier för att identifiera förbättringsområden.",
+  },
+];
+
 const Schack = () => {
   return (
     <div className="min-h-screen bg-background">
