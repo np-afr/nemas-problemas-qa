@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/nemas-problemas-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "QA", href: "#tjanster" },
-    { label: "Schack", href: "schack" },
-    { label: "Träningsklasser", href: "fitness" },
+    { label: "QA", href: "/qa" },
+    { label: "Schack", href: "/schack" },
+    { label: "Träningsklasser", href: "/traningsklasser" },
   ];
 
   return (
@@ -17,24 +18,26 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="Nemas Problemas" className="h-14 md:h-16 w-auto" />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 className="text-muted-foreground hover:text-foreground font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all hover:after:w-full"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <Button variant="brand" size="default">
-              Kontakta Mig
-            </Button>
+            <Link to="/kontakt">
+              <Button variant="brand" size="default">
+                Kontakta Mig
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -48,18 +51,20 @@ const Header = () => {
           <nav className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  to={link.href}
                   className="text-muted-foreground hover:text-foreground font-medium py-2 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <Button variant="brand" className="w-full mt-2">
-                Kontakta Mig
-              </Button>
+              <Link to="/kontakt" onClick={() => setIsMenuOpen(false)}>
+                <Button variant="brand" className="w-full mt-2">
+                  Kontakta Mig
+                </Button>
+              </Link>
             </div>
           </nav>
         )}
