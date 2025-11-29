@@ -21,9 +21,10 @@ const Schack = () => {
                 I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas
               </p>
               <a
-                className="text-lg md:text-xl text-muted-foreground mb-8"
+                className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
                 href="https://schack.se/forbundet/tfs/arkiv/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 här
               </a>
