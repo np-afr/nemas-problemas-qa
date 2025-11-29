@@ -13,7 +13,7 @@ const Kontakt = () => {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -27,9 +27,9 @@ const Kontakt = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -57,9 +57,7 @@ const Kontakt = () => {
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
               {/* Contact Info */}
               <div>
-                <h2 className="font-display text-2xl font-bold text-foreground mb-8">
-                  Kontaktuppgifter
-                </h2>
+                <h2 className="font-display text-2xl font-bold text-foreground mb-8">Kontaktuppgifter</h2>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
@@ -67,25 +65,17 @@ const Kontakt = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">E-post</h3>
-                      <p className="text-muted-foreground">kontakt@nemasproblemas.se</p>
+                      <p className="text-muted-foreground">angelina ( at ) nemasproblemas.com</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
-                      <Phone className="h-5 w-5 text-accent" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">Telefon</h3>
-                      <p className="text-muted-foreground">070-XXX XX XX</p>
-                    </div>
-                  </div>
+
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
                       <MapPin className="h-5 w-5 text-accent" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Plats</h3>
-                      <p className="text-muted-foreground">Stockholm, Sverige</p>
+                      <p className="text-muted-foreground">Malmö, Sverige</p>
                     </div>
                   </div>
                 </div>
@@ -93,9 +83,7 @@ const Kontakt = () => {
 
               {/* Contact Form */}
               <div className="bg-card rounded-2xl p-8 shadow-soft">
-                <h2 className="font-display text-2xl font-bold text-foreground mb-6">
-                  Skicka ett meddelande
-                </h2>
+                <h2 className="font-display text-2xl font-bold text-foreground mb-6">Skicka ett meddelande</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
