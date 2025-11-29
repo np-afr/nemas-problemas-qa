@@ -6,9 +6,9 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto ">
           {/* Logo */}
-          <div className="mb-8 opacity-0 animate-fade-in" style={{
+          <div style={{
           animationDelay: "0.1s"
-        }}>
+        }} className="mb-8 opacity-0 animate-fade-in text-center">
             <img src={logo} alt="Nemas Problemas" className="h-80 md:h-[28rem] lg:h-[36rem] w-auto mx-auto animate-float" />
           </div>
 
