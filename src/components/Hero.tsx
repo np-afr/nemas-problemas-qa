@@ -40,17 +40,6 @@ const Hero = () => {
             <span className="text-gradient">Hjälper team att skapa stabila och pålitliga system.</span>
           </h1>
 
-          {/* Subheadline */}
-          <p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in"
-            style={{
-              animationDelay: "0.4s",
-            }}
-          >
-            Erfaren QA-konsult som hjälper team att leverera mjukvara utan bekymmer. Från teststrategi till exekvering —
-            jag har koll på kvaliteten.
-          </p>
-
           {/* CTA Buttons */}
           <div
             className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in"
