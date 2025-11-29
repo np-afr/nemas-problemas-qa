@@ -20,16 +20,6 @@ const Hero = () => {
             />
           </div>
 
-          {/* Tagline */}
-          <p
-            className="text-accent font-medium text-lg md:text-xl mb-4 opacity-0 animate-fade-in italic"
-            style={{
-              animationDelay: "0.2s",
-            }}
-          >
-            — Kvalitetsentusiast, sprallig träningsinstruktör & nördig schackskribent
-          </p>
-
           {/* Main Headline */}
           <h1
             className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-6 opacity-0 animate-fade-in leading-tight"
