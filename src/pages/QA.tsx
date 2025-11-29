@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Target, Users, Zap, ArrowRight } from "lucide-react";
+import { CheckCircle, Bug, Users, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
 
@@ -17,7 +17,7 @@ const calculateYearsOfExperience = () => {
 
 const services = [
   {
-    icon: Target,
+    icon: Bug,
     title: "Testautomatisering",
     description: "Bygg robusta automatiserade tester som fångar buggar tidigt och sparar tid i längden."
   },
