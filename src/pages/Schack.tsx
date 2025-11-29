@@ -42,10 +42,15 @@ const Schack = () => {
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Schacklektioner
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              <a 
+                href="https://tidskriftfor.schack.se/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-lg md:text-xl text-muted-foreground mb-8 hover:text-accent transition-colors underline underline-offset-4"
+              >
                 Utveckla ditt schackspel med personlig coachning. Oavsett om du är nybörjare 
                 eller erfaren spelare hjälper jag dig att nå nästa nivå.
-              </p>
+              </a>
               <Link to="/kontakt">
                 <Button variant="brand" size="xl">
                   Boka en lektion
