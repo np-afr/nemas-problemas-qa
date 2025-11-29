@@ -7,7 +7,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Om Mig", href: "#om-mig" },
     { label: "QA", href: "#tjanster" },
     { label: "Schack", href: "schack" },
     { label: "Träningsklasser", href: "fitness" },
