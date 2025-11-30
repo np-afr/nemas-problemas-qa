@@ -9,7 +9,7 @@ const Hero = () => {
           <div style={{
           animationDelay: "0.1s"
         }} className="mb-8 opacity-0 animate-fade-in text-center">
-            <img src={logo} alt="Nemas Problemas" className="h-64 md:h-[28rem] lg:h-[36rem] w-auto mx-auto animate-float border-0 outline-none" />
+            <img src={logo} alt="Nemas Problemas" className="h-64 md:h-[28rem] lg:h-[16rem] w-auto mx-auto animate-float border-0 outline-none" />
           </div>
 
           {/* Main Headline */}
