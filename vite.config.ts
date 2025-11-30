@@ -17,5 +17,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  homepage: mode === "production" ? "/nemas-problemas-qa/" : "/",
+  base: "/nemas-problemas-qa/",
 }));
