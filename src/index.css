@@ -80,7 +80,12 @@
 @layer base {
   * {
     @apply border-border;
-    cursor: url('/cursor-bug.png') 16 16, auto;
+    cursor: url('/cursor-bug.png') 16 16, auto !important;
+  }
+
+  a, button, [role="button"], input[type="submit"], input[type="button"], 
+  [onclick], .cursor-pointer, [class*="hover:"] {
+    cursor: url('/cursor-bug.png') 16 16, auto !important;
   }
 
   body {
