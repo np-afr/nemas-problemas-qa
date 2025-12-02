@@ -80,6 +80,7 @@
 @layer base {
   * {
     @apply border-border;
+    cursor: url('/cursor-bug.png') 16 16, auto;
   }
 
   body {
