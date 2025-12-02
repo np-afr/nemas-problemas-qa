@@ -1,11 +1,27 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 const OmMig = () => {
   return (
-    <main className="min-h-screen bg-background text-foreground pt-32 pb-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-display font-bold mb-6">Om mig</h1>
-        <p className="text-muted-foreground">Mer information kommer snart.</p>
-      </div>
-    </main>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main className="pt-32 pb-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 text-foreground">
+              Om mig
+            </h1>
+            <div className="bg-card rounded-2xl p-8 md:p-12 shadow-soft">
+              <p className="text-lg text-muted-foreground mb-4">
+                Mer information kommer snart.
+              </p>
+              <div className="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
