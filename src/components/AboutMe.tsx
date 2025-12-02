@@ -77,7 +77,7 @@ const AboutMe = () => {
               <span className="text-gradient font-semibold">
                 kvalitet är inget som händer av en slump — det är ett ständigt arbete.
               </span>{" "}
-              Buggar finns i kod, i processer, i samtal mellan människor och min passion är att sandpappra bort dem
+              Buggar finns i kod, i processer, i samtal mellan människor och min passion är att slipa bort dem
               tills vi har en robust och användarvänlig produkt.
             </p>
           </div>
