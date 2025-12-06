@@ -160,7 +160,7 @@ const QA = () => {
                   <AccordionItem 
                     key={index} 
                     value={`job-${index}`}
-                    className="bg-background rounded-xl border border-border/50 px-6 overflow-hidden"
+                    className="bg-card rounded-xl border border-border/50 px-6 overflow-hidden shadow-soft hover:shadow-soft-lg hover:border-accent/30 transition-all cursor-pointer"
                   >
                     <AccordionTrigger className="hover:no-underline py-6">
                       <div className="text-left">
