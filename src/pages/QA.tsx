@@ -147,32 +147,6 @@ const QA = () => {
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-              Mina tjänster
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {services.map((service, index) => (
-                <div 
-                  key={index}
-                  className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-6">
-                    <service.icon className="h-6 w-6 text-accent" />
-                  </div>
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* CV/Experience Section */}
         <section className="py-16 md:py-24 bg-card">
