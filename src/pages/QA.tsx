@@ -125,10 +125,12 @@ const education = [
   {
     title: "Kandidatexamen, Systemutveckling",
     institution: "Malmö Universitet",
+    period: "2017–2020",
   },
   {
     title: "Fullstack Developer Accelerated Course",
     institution: "Experis Academy",
+    period: "2020",
     duration: "3 månader",
   },
 ];
@@ -137,6 +139,7 @@ const certifications = [
   {
     title: "ISTQB - Certifierad testare",
     level: "Foundation nivå",
+    year: "2021",
   },
 ];
 
@@ -247,7 +250,7 @@ const QA = () => {
                         {edu.title}
                       </h3>
                       <p className="text-muted-foreground text-sm">
-                        {edu.institution}
+                        {edu.institution} • {edu.period}
                         {edu.duration && ` • ${edu.duration}`}
                       </p>
                     </div>
@@ -267,7 +270,7 @@ const QA = () => {
                         {cert.title}
                       </h3>
                       <p className="text-muted-foreground text-sm">
-                        {cert.level}
+                        {cert.level} • {cert.year}
                       </p>
                     </div>
                   ))}
