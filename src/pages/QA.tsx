@@ -78,7 +78,7 @@ Jag drev även initiativ för att få utvecklare att börja skriva integrationst
   },
   {
     title: "Testautomationsutvecklare",
-    company: "[Redacted high-profile fintech company]",
+    company: "[Avidentifierat högprofilerat fintech-bolag]",
     period: "Maj 2021 – feb 2022",
     connection: "Kopplad till System Verification",
     skills: ["Java"],
