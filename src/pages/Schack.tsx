@@ -32,12 +32,13 @@ const Schack = () => {
                     </a>
                   </p>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex flex-col items-center">
                   <img 
                     src={chessImage} 
                     alt="Angelina Fransson spelar schack" 
                     className="max-w-full h-auto rounded-2xl"
                   />
+                  <p className="text-sm text-muted-foreground mt-2">Foto: Maria Emilianova</p>
                 </div>
               </div>
             </div>
