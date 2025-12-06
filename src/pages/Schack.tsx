@@ -43,7 +43,7 @@ const Schack = () => {
                   </p>
 
                   <p className="text-lg leading-relaxed">
-                    Vid 14 års ålder spelade jag min första turnering i Sveriges ungdomslandslag – VM för ungdomar i Vietnam. Under 10 år reste jag världen runt för att representera Sverige och betade bland annat av fyra OS: <span className="font-medium text-foreground">Khanty-Mansiysk 2010</span>, <span className="font-medium text-foreground">Istanbul 2012</span>, <span className="font-medium text-foreground">Baku 2016</span> och <span className="font-medium text-foreground">Batumi 2018</span>.
+                    Vid 14 års ålder spelade jag min första turnering i Sveriges ungdomslandslag – VM för ungdomar i Vietnam. Under gymnasiet fick jag ett stipendium för att ta ett sabbatsår för att studera på Norges Toppidretts Gymnas, för att helhjärtat satsa på schack. Under 10 år reste jag världen runt för att representera Sverige och betade bland annat av fyra OS: <span className="font-medium text-foreground">Khanty-Mansiysk 2010</span>, <span className="font-medium text-foreground">Istanbul 2012</span>, <span className="font-medium text-foreground">Baku 2016</span> och <span className="font-medium text-foreground">Batumi 2018</span>.
                   </p>
 
                   <p className="text-lg leading-relaxed">
