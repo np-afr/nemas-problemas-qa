@@ -14,23 +14,9 @@ const Schack = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               {/* Title */}
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-12 text-center">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-10 text-center">
                 Schack
               </h1>
-              
-              {/* Featured Image */}
-              <div className="relative mb-12">
-                <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-2xl">
-                  <img 
-                    src={chessImage} 
-                    alt="Angelina Fransson spelar schack" 
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground mt-3 text-center italic">
-                  Foto: Maria Emilianova
-                </p>
-              </div>
 
               {/* Content */}
               <div className="max-w-3xl mx-auto">
@@ -40,29 +26,21 @@ const Schack = () => {
                 </blockquote>
 
                 <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
+                  {/* First paragraph with floating image */}
+                  <div className="md:float-right md:ml-8 md:mb-4 md:w-64 lg:w-80 mb-6">
+                    <img 
+                      src={chessImage} 
+                      alt="Angelina Fransson spelar schack" 
+                      className="w-full h-auto rounded-xl"
+                    />
+                    <p className="text-sm text-muted-foreground mt-2 text-center italic">
+                      Foto: Maria Emilianova
+                    </p>
+                  </div>
+
                   <p className="text-lg leading-relaxed">
                     Min schackhistoria började när jag första gången såg min far sitta med ett bräde och en schackbok när jag knappt kunde gå. Många av barndomens timmar spenderades vid brädet, ibland med en bok, ibland med far i de småländska skogarna.
                   </p>
-
-                  {/* Highlighted Stats */}
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
-                    <div className="text-center p-4 bg-background rounded-xl border border-border/50">
-                      <span className="block text-3xl md:text-4xl font-display font-bold text-accent">14</span>
-                      <span className="text-sm text-muted-foreground">år vid första VM</span>
-                    </div>
-                    <div className="text-center p-4 bg-background rounded-xl border border-border/50">
-                      <span className="block text-3xl md:text-4xl font-display font-bold text-accent">10</span>
-                      <span className="text-sm text-muted-foreground">år i landslaget</span>
-                    </div>
-                    <div className="text-center p-4 bg-background rounded-xl border border-border/50">
-                      <span className="block text-3xl md:text-4xl font-display font-bold text-accent">4</span>
-                      <span className="text-sm text-muted-foreground">Schack-OS</span>
-                    </div>
-                    <div className="text-center p-4 bg-background rounded-xl border border-border/50">
-                      <span className="block text-3xl md:text-4xl font-display font-bold text-accent">2025</span>
-                      <span className="text-sm text-muted-foreground">skriver igen</span>
-                    </div>
-                  </div>
 
                   <p className="text-lg leading-relaxed">
                     Vid 14 års ålder spelade jag min första turnering i Sveriges ungdomslandslag – VM för ungdomar i Vietnam. Under 10 år reste jag världen runt för att representera Sverige och betade bland annat av fyra OS: <span className="font-medium text-foreground">Khanty-Mansiysk 2010</span>, <span className="font-medium text-foreground">Istanbul 2012</span>, <span className="font-medium text-foreground">Baku 2016</span> och <span className="font-medium text-foreground">Batumi 2018</span>.
@@ -79,6 +57,25 @@ const Schack = () => {
                       här
                     </a>.
                   </p>
+
+                  {/* Clear float before stats */}
+                  <div className="clear-both"></div>
+
+                  {/* Highlighted Stats */}
+                  <div className="grid grid-cols-3 gap-4 py-8">
+                    <div className="text-center p-4 bg-background rounded-xl border border-border/50">
+                      <span className="block text-3xl md:text-4xl font-display font-bold text-accent">14</span>
+                      <span className="text-sm text-muted-foreground">år vid första VM</span>
+                    </div>
+                    <div className="text-center p-4 bg-background rounded-xl border border-border/50">
+                      <span className="block text-3xl md:text-4xl font-display font-bold text-accent">10</span>
+                      <span className="text-sm text-muted-foreground">år i landslaget</span>
+                    </div>
+                    <div className="text-center p-4 bg-background rounded-xl border border-border/50">
+                      <span className="block text-3xl md:text-4xl font-display font-bold text-accent">4</span>
+                      <span className="text-sm text-muted-foreground">Schack-OS</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
