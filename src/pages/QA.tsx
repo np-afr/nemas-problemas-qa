@@ -111,6 +111,33 @@ Min roll var bred och omfattade:
 
 Jag analyserade user stories och krav för att förstå verksamhetsbehoven och skrev testfall baserat på dem. Teamet stödde även verksamhetens användare under UAT och Hypercare i samband med go-live.`,
   },
+  {
+    title: "Manuell testare",
+    company: "Axis Communications",
+    period: "Mar 2018 – aug 2019",
+    connection: "",
+    skills: ["Systemtestning", "Integrationstestning", "Regressionstestning"],
+    description: `Jag började som systemtestare i ett release-team och gick vidare till att bli feature-testare och testskrivare. Jag utförde en mängd olika tester: system-, integrations-, regressions-, explorativa och scriptade tester. Jag ansvarade även för planering och för att skriva testfall och funktionsbeskrivningar.`,
+  },
+];
+
+const education = [
+  {
+    title: "Kandidatexamen, Systemutveckling",
+    institution: "Malmö Universitet",
+  },
+  {
+    title: "Fullstack Developer Accelerated Course",
+    institution: "Experis Academy",
+    duration: "3 månader",
+  },
+];
+
+const certifications = [
+  {
+    title: "ISTQB - Certifierad testare",
+    level: "Foundation nivå",
+  },
 ];
 
 const QA = () => {
@@ -181,7 +208,7 @@ const QA = () => {
                           {job.title}, {job.company}
                         </h3>
                         <p className="text-sm text-muted-foreground mt-1">
-                          {job.period} • {job.connection}
+                          {job.period}{job.connection && ` • ${job.connection}`}
                         </p>
                       </div>
                     </AccordionTrigger>
@@ -200,6 +227,52 @@ const QA = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
+            </div>
+          </div>
+        </section>
+
+        {/* Education & Certifications Section */}
+        <section className="py-16 md:py-24 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-12">
+              {/* Education */}
+              <div>
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
+                  Utbildning
+                </h2>
+                <div className="space-y-6">
+                  {education.map((edu, index) => (
+                    <div key={index} className="border-l-2 border-accent pl-4">
+                      <h3 className="font-display font-semibold text-foreground">
+                        {edu.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm">
+                        {edu.institution}
+                        {edu.duration && ` • ${edu.duration}`}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Certifications */}
+              <div>
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
+                  Certifieringar
+                </h2>
+                <div className="space-y-6">
+                  {certifications.map((cert, index) => (
+                    <div key={index} className="border-l-2 border-accent pl-4">
+                      <h3 className="font-display font-semibold text-foreground">
+                        {cert.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm">
+                        {cert.level}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
