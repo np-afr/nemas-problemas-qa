@@ -4,12 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Bug, Users, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const calculateYearsOfExperience = () => {
   const start = new Date(2018, 2, 16);
@@ -25,23 +20,23 @@ const services = [
   {
     icon: Bug,
     title: "Testautomatisering",
-    description: "Bygg robusta automatiserade tester som fångar buggar tidigt och sparar tid i längden."
+    description: "Bygg robusta automatiserade tester som fångar buggar tidigt och sparar tid i längden.",
   },
   {
     icon: CheckCircle,
     title: "Manuell testning",
-    description: "Noggrann explorativ testning för att hitta de buggar som automatiserade tester missar."
+    description: "Noggrann explorativ testning för att hitta de buggar som automatiserade tester missar.",
   },
   {
     icon: Users,
     title: "Testprocesser",
-    description: "Hjälp med att etablera och förbättra era QA-processer och arbetssätt."
+    description: "Hjälp med att etablera och förbättra era QA-processer och arbetssätt.",
   },
   {
     icon: Zap,
     title: "CI/CD Integration",
-    description: "Integrera tester i era pipelines för snabbare och säkrare leveranser."
-  }
+    description: "Integrera tester i era pipelines för snabbare och säkrare leveranser.",
+  },
 ];
 
 const experience = [
@@ -51,19 +46,18 @@ const experience = [
     period: "Feb 2023 – nu",
     connection: "Kopplad till Nemas Problemas AB",
     skills: ["Testplanering", "Cypress", "TypeScript"],
-    description: `Jag arbetar som Test Automation Developer på Skånetrafiken och har varit med sedan projektstarten. Jag har haft möjlighet att påverka hur teamet arbetar med QA, inklusive val av testverktyg och metoder.
+    description: `Jag arbetar som testautomatiseringutvecklare på Skånetrafiken och har varit med sedan projektstarten. Jag ansvarar för teamets kvalitetssäkring.
 Min huvudsakliga teknik är Cypress, och automatiseringen skrivs i TypeScript.
 
 Arbetet omfattar:
 • Automatisering av end-to-end-flöden
 • Funktionella tester
-• Tillgänglighetstester
 • Manuell explorativ testning
 
-Jag samarbetar tätt med utvecklare för att säkerställa hög kvalitet i leveranserna. Rollen kräver både teknisk kompetens och god kommunikationsförmåga.`
+Jag samarbetar tätt med utvecklare för att säkerställa hög kvalitet i leveranserna. Rollen kräver både teknisk kompetens och god kommunikationsförmåga.`,
   },
   {
-    title: "Technical Tester",
+    title: "Teknisk Testare",
     company: "IKEA (Kitchen Planner-projektet)",
     period: "Feb 2022 – okt 2022",
     connection: "Kopplad till Knowit",
@@ -75,33 +69,33 @@ Jag samarbetar tätt med utvecklare för att säkerställa hög kvalitet i lever
 • Schemalagt produktionsstöd
 • Arbete i AWS-miljö
 
-Tillsammans med auto lead byggde jag upp UI-testautomationen från grunden med Cypress. Jag ansvarade för:
+Tillsammans med auto-lead byggde jag upp UI-testautomationen från grunden med Cypress. Jag ansvarade för:
 • Utveckling och underhåll av majoriteten av Cypress-testerna
 • Administrativ strukturering via Jira och Confluence
 • Att onboarda andra testare i automatisering
 
-Jag drev även initiativ för att få utvecklare att börja skriva integrationstester. Genom workshops, diskussioner och regelbundna utvärderingar skapade jag ett dedikerat integrationstestteam.`
+Jag drev även initiativ för att få utvecklare att börja skriva integrationstester. Genom workshops, diskussioner och regelbundna utvärderingar skapade jag ett dedikerat integrationstestteam.`,
   },
   {
-    title: "Test Automation Engineer",
+    title: "Testautomationsutvecklare",
     company: "[Redacted high-profile fintech company]",
     period: "Maj 2021 – feb 2022",
     connection: "Kopplad till System Verification",
     skills: ["Java"],
-    description: `Jag arbetade med att utveckla automatiserade testfall (integration och funktionella tester) samt byggde ett testautomationsramverk i Java. Jag tog även fram en automatiskt genererad testrapport för att göra testerna mer tillgängliga för icke-utvecklare, vilket uppskattades av organisationen.`
+    description: `Jag arbetade med att utveckla automatiserade testfall (integration och funktionella tester) samt byggde ett testautomationsramverk i Java. Jag tog även fram en automatiskt genererad testrapport för att göra testerna mer tillgängliga för icke-utvecklare, vilket uppskattades av organisationen.`,
   },
   {
-    title: "Fullstack Developer & Scrum Master",
+    title: "Fullstackutvecklare & Scrum Master",
     company: "Fortnox",
     period: "Okt 2020 – apr 2021",
     connection: "Kopplad till Experis Sverige",
     skills: ["Java"],
     description: `På Fortnox arbetade jag främst som Java-utvecklare samt Scrum Master. Under en sprint genomförde vi även backend-förändringar i frontend i React. Jag ingick i det första utvecklingsteamet i Malmö, vilket innebar att etablera utvecklingsverksamheten utöver Växjö.
 
-Teamet arbetade enligt TDD, med JBehave som testmetod. Eftersom teamet saknade dedikerade testare utförde jag olika typer av tester utöver utvecklingsarbete.`
+Teamet arbetade enligt TDD, med JBehave som testmetod. Eftersom teamet saknade dedikerade testare utförde jag olika typer av tester utöver utvecklingsarbete.`,
   },
   {
-    title: "Software QA Tester",
+    title: "Manuell testare",
     company: "INGKA Centres",
     period: "Jan 2020 – juni 2020",
     connection: "Kopplad till Experis Sverige",
@@ -115,8 +109,8 @@ Min roll var bred och omfattade:
 • Scriptade tester
 • UAT
 
-Jag analyserade user stories och krav för att förstå verksamhetsbehoven och skrev testfall baserat på dem. Teamet stödde även verksamhetens användare under UAT och Hypercare i samband med go-live.`
-  }
+Jag analyserade user stories och krav för att förstå verksamhetsbehoven och skrev testfall baserat på dem. Teamet stödde även verksamhetens användare under UAT och Hypercare i samband med go-live.`,
+  },
 ];
 
 const QA = () => {
@@ -134,10 +128,10 @@ const QA = () => {
                 Kvalitetssäkring som gör skillnad
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Med över {years} års erfarenhet hjälper jag företag att leverera mjukvara med högre kvalitet, 
-                färre buggar och nöjdare användare.
+                Med över {years} års erfarenhet hjälper jag företag att leverera mjukvara med högre kvalitet, färre
+                buggar och nöjdare användare.
               </p>
-              
+
               {/* Main competencies */}
               <div className="mb-10">
                 <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Huvudfokus</p>
@@ -156,7 +150,7 @@ const QA = () => {
                   </div>
                 </div>
               </div>
-              
+
               <Link to="/kontakt">
                 <Button variant="brand" size="xl">
                   Boka ett samtal
@@ -167,7 +161,6 @@ const QA = () => {
           </div>
         </section>
 
-
         {/* CV/Experience Section */}
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -177,8 +170,8 @@ const QA = () => {
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {experience.map((job, index) => (
-                  <AccordionItem 
-                    key={index} 
+                  <AccordionItem
+                    key={index}
                     value={`job-${index}`}
                     className="bg-card rounded-xl border border-border/50 px-6 overflow-hidden shadow-soft hover:shadow-soft-lg hover:border-accent/30 transition-all cursor-pointer"
                   >
@@ -193,16 +186,11 @@ const QA = () => {
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="pb-6">
-                      <p className="text-muted-foreground whitespace-pre-line mb-4">
-                        {job.description}
-                      </p>
+                      <p className="text-muted-foreground whitespace-pre-line mb-4">{job.description}</p>
                       {job.skills.length > 0 && (
                         <div className="flex flex-wrap gap-2">
                           {job.skills.map((skill, skillIndex) => (
-                            <span 
-                              key={skillIndex}
-                              className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full"
-                            >
+                            <span key={skillIndex} className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">
                               {skill}
                             </span>
                           ))}
