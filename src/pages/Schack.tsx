@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Crown, Users, GraduationCap, Trophy, ArrowRight } from "lucide-react";
+import { Crown } from "lucide-react";
+import chessImage from "@/assets/chess-angelina.png";
 import { Link } from "react-router-dom";
 
 const Schack = () => {
@@ -12,22 +13,33 @@ const Schack = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mx-auto mb-8">
-                <Crown className="h-8 w-8 text-accent" />
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="text-center md:text-left">
+                  <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mx-auto md:mx-0 mb-8">
+                    <Crown className="h-8 w-8 text-accent" />
+                  </div>
+                  <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Schack</h1>
+                  <p className="text-xl md:text-2xl text-muted-foreground mb-4">
+                    I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas{" "}
+                    <a
+                      className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
+                      href="https://schack.se/forbundet/tfs/arkiv/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      här
+                    </a>
+                  </p>
+                </div>
+                <div className="flex justify-center">
+                  <img 
+                    src={chessImage} 
+                    alt="Angelina Fransson spelar schack" 
+                    className="max-w-full h-auto rounded-2xl"
+                  />
+                </div>
               </div>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Artiklar</h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-                I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas{" "}
-                <a
-                  className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
-                  href="https://schack.se/forbundet/tfs/arkiv/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  här
-                </a>
-              </p>
             </div>
           </div>
         </section>
