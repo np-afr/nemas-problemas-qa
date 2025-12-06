@@ -79,7 +79,7 @@ const Kontakt = () => {
                       <a
                         href="https://www.instagram.com/coach.fransson/"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
                       >
                         @coach.fransson
