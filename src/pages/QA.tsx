@@ -139,16 +139,22 @@ const QA = () => {
               </p>
               
               {/* Main competencies */}
-              <div className="flex flex-wrap justify-center gap-3 mb-10">
-                <span className="px-5 py-2 bg-accent text-accent-foreground font-semibold rounded-full shadow-soft">
-                  Cypress
-                </span>
-                <span className="px-5 py-2 bg-accent text-accent-foreground font-semibold rounded-full shadow-soft">
-                  Testautomatisering
-                </span>
-                <span className="px-5 py-2 bg-accent text-accent-foreground font-semibold rounded-full shadow-soft">
-                  Manuell testning
-                </span>
+              <div className="mb-10">
+                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Huvudfokus</p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <div className="flex items-center gap-2 text-foreground">
+                    <span className="w-2 h-2 rounded-full bg-accent"></span>
+                    <span className="font-medium">Cypress</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-foreground">
+                    <span className="w-2 h-2 rounded-full bg-accent"></span>
+                    <span className="font-medium">Testautomatisering</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-foreground">
+                    <span className="w-2 h-2 rounded-full bg-accent"></span>
+                    <span className="font-medium">Manuell testning</span>
+                  </div>
+                </div>
               </div>
               
               <Link to="/kontakt">
