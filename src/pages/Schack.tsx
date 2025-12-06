@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Crown } from "lucide-react";
 import chessImage from "@/assets/chess-angelina.png";
 import { Link } from "react-router-dom";
 
@@ -16,9 +15,6 @@ const Schack = () => {
             <div className="max-w-4xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="text-center md:text-left">
-                  <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mx-auto md:mx-0 mb-8">
-                    <Crown className="h-8 w-8 text-accent" />
-                  </div>
                   <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">Schack</h1>
                   <p className="text-xl md:text-2xl text-muted-foreground mb-4">
                     I dagsläget skriver jag artiklar för Tidskrift För Schack, som kan hittas{" "}
