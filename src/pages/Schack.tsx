@@ -65,7 +65,7 @@ const Schack = () => {
                   <div className="grid grid-cols-3 gap-4 py-8">
                     <div className="text-center p-4 bg-background rounded-xl border border-border/50">
                       <span className="block text-3xl md:text-4xl font-display font-bold text-accent">14</span>
-                      <span className="text-sm text-muted-foreground">år vid första VM</span>
+                      <span className="text-sm text-muted-foreground">år vid första U-VM</span>
                     </div>
                     <div className="text-center p-4 bg-background rounded-xl border border-border/50">
                       <span className="block text-3xl md:text-4xl font-display font-bold text-accent">10</span>
