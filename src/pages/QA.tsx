@@ -137,6 +137,20 @@ const QA = () => {
                 Med över {years} års erfarenhet hjälper jag företag att leverera mjukvara med högre kvalitet, 
                 färre buggar och nöjdare användare.
               </p>
+              
+              {/* Main competencies */}
+              <div className="flex flex-wrap justify-center gap-3 mb-10">
+                <span className="px-5 py-2 bg-accent text-accent-foreground font-semibold rounded-full shadow-soft">
+                  Cypress
+                </span>
+                <span className="px-5 py-2 bg-accent text-accent-foreground font-semibold rounded-full shadow-soft">
+                  Testautomatisering
+                </span>
+                <span className="px-5 py-2 bg-accent text-accent-foreground font-semibold rounded-full shadow-soft">
+                  Manuell testning
+                </span>
+              </div>
+              
               <Link to="/kontakt">
                 <Button variant="brand" size="xl">
                   Boka ett samtal
