@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Bug, Users, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const calculateYearsOfExperience = () => {
   const start = new Date(2018, 2, 16);
@@ -35,6 +41,81 @@ const services = [
     icon: Zap,
     title: "CI/CD Integration",
     description: "Integrera tester i era pipelines för snabbare och säkrare leveranser."
+  }
+];
+
+const experience = [
+  {
+    title: "Testautomatiseringsutvecklare",
+    company: "Skånetrafiken",
+    period: "Feb 2023 – nu",
+    connection: "Kopplad till Nemas Problemas AB",
+    skills: ["Testplanering", "Cypress", "TypeScript"],
+    description: `Jag arbetar som Test Automation Developer på Skånetrafiken och har varit med sedan projektstarten. Jag har haft möjlighet att påverka hur teamet arbetar med QA, inklusive val av testverktyg och metoder.
+Min huvudsakliga teknik är Cypress, och automatiseringen skrivs i TypeScript.
+
+Arbetet omfattar:
+• Automatisering av end-to-end-flöden
+• Funktionella tester
+• Tillgänglighetstester
+• Manuell explorativ testning
+
+Jag samarbetar tätt med utvecklare för att säkerställa hög kvalitet i leveranserna. Rollen kräver både teknisk kompetens och god kommunikationsförmåga.`
+  },
+  {
+    title: "Technical Tester",
+    company: "IKEA (Kitchen Planner-projektet)",
+    period: "Feb 2022 – okt 2022",
+    connection: "Kopplad till Knowit",
+    skills: ["Cypress"],
+    description: `Jag hade en bred testroll inom IKEA:s Kitchen Planner-projekt. Arbetet omfattade:
+• Explorativ testning av epics
+• Regressionstestning
+• Sprint board-testning
+• Schemalagt produktionsstöd
+• Arbete i AWS-miljö
+
+Tillsammans med auto lead byggde jag upp UI-testautomationen från grunden med Cypress. Jag ansvarade för:
+• Utveckling och underhåll av majoriteten av Cypress-testerna
+• Administrativ strukturering via Jira och Confluence
+• Att onboarda andra testare i automatisering
+
+Jag drev även initiativ för att få utvecklare att börja skriva integrationstester. Genom workshops, diskussioner och regelbundna utvärderingar skapade jag ett dedikerat integrationstestteam.`
+  },
+  {
+    title: "Test Automation Engineer",
+    company: "[Redacted high-profile fintech company]",
+    period: "Maj 2021 – feb 2022",
+    connection: "Kopplad till System Verification",
+    skills: ["Java"],
+    description: `Jag arbetade med att utveckla automatiserade testfall (integration och funktionella tester) samt byggde ett testautomationsramverk i Java. Jag tog även fram en automatiskt genererad testrapport för att göra testerna mer tillgängliga för icke-utvecklare, vilket uppskattades av organisationen.`
+  },
+  {
+    title: "Fullstack Developer & Scrum Master",
+    company: "Fortnox",
+    period: "Okt 2020 – apr 2021",
+    connection: "Kopplad till Experis Sverige",
+    skills: ["Java"],
+    description: `På Fortnox arbetade jag främst som Java-utvecklare samt Scrum Master. Under en sprint genomförde vi även backend-förändringar i frontend i React. Jag ingick i det första utvecklingsteamet i Malmö, vilket innebar att etablera utvecklingsverksamheten utöver Växjö.
+
+Teamet arbetade enligt TDD, med JBehave som testmetod. Eftersom teamet saknade dedikerade testare utförde jag olika typer av tester utöver utvecklingsarbete.`
+  },
+  {
+    title: "Software QA Tester",
+    company: "INGKA Centres",
+    period: "Jan 2020 – juni 2020",
+    connection: "Kopplad till Experis Sverige",
+    skills: [],
+    description: `Projektet syftade till att globalt implementera Dynamics 365-lösningarna (FO och CRM).
+
+Min roll var bred och omfattade:
+• Regressionstester
+• Systemtester
+• Explorativa tester
+• Scriptade tester
+• UAT
+
+Jag analyserade user stories och krav för att förstå verksamhetsbehoven och skrev testfall baserat på dem. Teamet stödde även verksamhetens användare under UAT och Hypercare i samband med go-live.`
   }
 ];
 
@@ -89,6 +170,54 @@ const QA = () => {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CV/Experience Section */}
+        <section className="py-16 md:py-24 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+              Erfarenhet
+            </h2>
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                {experience.map((job, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`job-${index}`}
+                    className="bg-background rounded-xl border border-border/50 px-6 overflow-hidden"
+                  >
+                    <AccordionTrigger className="hover:no-underline py-6">
+                      <div className="text-left">
+                        <h3 className="font-display text-lg font-semibold text-foreground">
+                          {job.title}, {job.company}
+                        </h3>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          {job.period} • {job.connection}
+                        </p>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-6">
+                      <p className="text-muted-foreground whitespace-pre-line mb-4">
+                        {job.description}
+                      </p>
+                      {job.skills.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {job.skills.map((skill, skillIndex) => (
+                            <span 
+                              key={skillIndex}
+                              className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full"
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </section>
