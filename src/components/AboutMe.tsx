@@ -60,10 +60,10 @@ const AboutMe = () => {
               Vem är jag?
             </h2>
             {/* Magnifying glass */}
-            <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto md:ml-20">
-              {/* Handle - connected to bottom left of circle */}
-              <div className="absolute -left-14 md:-left-16 bottom-0 md:bottom-1 rotate-[-45deg] origin-right">
-                <div className="w-20 md:w-24 h-4 md:h-5 bg-foreground rounded-full"></div>
+            <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto">
+              {/* Handle - connected directly to circle */}
+              <div className="absolute -left-12 md:-left-14 -bottom-3 md:-bottom-3 rotate-[-45deg] origin-right">
+                <div className="w-20 md:w-24 h-4 md:h-5 bg-foreground rounded-full translate-x-3"></div>
               </div>
               
               {/* Black circle frame */}
