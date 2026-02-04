@@ -60,23 +60,38 @@ const AboutMe = () => {
               Vem är jag?
             </h2>
             {/* Magnifying glass */}
-            <div className="relative w-56 h-56 md:w-64 md:h-64 mx-auto">
-              {/* Handle - positioned to the left */}
-              <div className="absolute left-0 top-1/2 -translate-x-[85%] -translate-y-1/2 rotate-[-45deg] origin-right">
-                <div className="w-16 md:w-20 h-5 md:h-6 bg-gradient-to-r from-primary/60 to-primary rounded-full shadow-md"></div>
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-8 md:h-10 bg-primary rounded-sm"></div>
+            <div className="relative w-52 h-52 md:w-60 md:h-60 mx-auto ml-auto mr-auto md:ml-24">
+              {/* Handle */}
+              <div className="absolute -left-12 md:-left-14 top-1/2 -translate-y-1/2 rotate-[-45deg]">
+                {/* Handle grip */}
+                <div className="relative w-20 md:w-24 h-6 md:h-7 rounded-full bg-gradient-to-b from-amber-700 via-amber-800 to-amber-900 shadow-lg">
+                  {/* Handle highlight */}
+                  <div className="absolute inset-x-0 top-1 h-1.5 mx-2 rounded-full bg-amber-600/50"></div>
+                  {/* Handle end cap */}
+                  <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 w-3 h-7 md:h-8 rounded-l-full bg-gradient-to-r from-amber-900 to-amber-800"></div>
+                </div>
+                {/* Metal connector to frame */}
+                <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-zinc-300 to-zinc-500 shadow-md border border-zinc-400"></div>
               </div>
-              {/* Lens frame */}
-              <div className="absolute inset-0 rounded-full border-[6px] md:border-8 border-primary shadow-soft-lg"></div>
-              {/* Lens reflection */}
-              <div className="absolute top-4 right-6 w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full blur-sm"></div>
-              {/* Image inside lens */}
-              <div className="absolute inset-[6px] md:inset-2 rounded-full overflow-hidden bg-background">
-                <img 
-                  src={angelinaAbout} 
-                  alt="Angelina" 
-                  className="w-full h-full object-cover object-top"
-                />
+              
+              {/* Lens frame (metal ring) */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-zinc-300 via-zinc-400 to-zinc-500 p-1.5 md:p-2 shadow-xl">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tl from-zinc-500 via-zinc-300 to-zinc-200 opacity-50"></div>
+                
+                {/* Inner lens area */}
+                <div className="relative w-full h-full rounded-full overflow-hidden bg-white/10 backdrop-blur-sm">
+                  {/* Image */}
+                  <img 
+                    src={angelinaAbout} 
+                    alt="Angelina" 
+                    className="w-full h-full object-cover object-top scale-110"
+                  />
+                  
+                  {/* Glass reflection overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent"></div>
+                  <div className="absolute top-6 right-8 w-12 h-12 md:w-16 md:h-16 bg-white/25 rounded-full blur-md"></div>
+                  <div className="absolute top-10 right-12 w-4 h-4 md:w-6 md:h-6 bg-white/40 rounded-full blur-sm"></div>
+                </div>
               </div>
             </div>
           </div>
