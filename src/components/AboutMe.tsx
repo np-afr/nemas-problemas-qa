@@ -68,11 +68,11 @@ const AboutMe = () => {
                 style={{ overflow: 'visible' }}
               >
                 <rect 
-                  x="72" y="72" 
-                  width="45" height="12" 
-                  rx="6" ry="6" 
+                  x="78" y="78" 
+                  width="40" height="10" 
+                  rx="5" ry="5" 
                   fill="#3a2a1a" 
-                  transform="rotate(45 72 72)"
+                  transform="rotate(45 78 78)"
                 />
               </svg>
               
