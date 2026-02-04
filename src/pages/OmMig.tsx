@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import chessAngelina from "@/assets/chess-angelina.png";
 
 const OmMig = () => {
   return (
@@ -12,6 +13,11 @@ const OmMig = () => {
               Om mig
             </h1>
             <div className="bg-card rounded-2xl p-8 md:p-12 shadow-soft">
+              <img 
+                src={chessAngelina} 
+                alt="Angelina spelar schack" 
+                className="w-full h-auto rounded-xl mb-6"
+              />
               <p className="text-lg text-muted-foreground mb-4">
                 Mer information kommer snart.
               </p>
