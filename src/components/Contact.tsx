@@ -26,10 +26,12 @@ const Contact = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="brand" size="xl" className="bg-accent hover:bg-accent/90">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Skicka ett mail
-                </Button>
+                <a href="mailto:angelina@nemasproblemas.se">
+                  <Button variant="brand" size="xl" className="bg-accent hover:bg-accent/90">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Skicka ett mail
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
