@@ -61,10 +61,10 @@ const AboutMe = () => {
             {/* Portrait bubble */}
             <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
               {/* Decorative ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 -rotate-6"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-secondary to-muted -rotate-6"></div>
               
               {/* Image container */}
-              <div className="absolute inset-2 rounded-full overflow-hidden shadow-soft-lg border-4 border-background">
+              <div className="absolute inset-2 rounded-full overflow-hidden shadow-soft-lg border-4 border-secondary">
                 <img 
                   src={angelinaAbout} 
                   alt="Angelina" 
