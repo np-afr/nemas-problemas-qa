@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import chessImage from "@/assets/chess-angelina.png";
+import { Link } from "react-router-dom";
 
 const Schack = () => {
   return (
@@ -26,12 +26,17 @@ const Schack = () => {
                 </blockquote>
 
                 <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
-                  {/* Floating image */}
-                  <img 
-                    src={chessImage} 
-                    alt="Angelina Fransson spelar schack" 
-                    className="md:float-right md:ml-6 md:mb-4 md:w-64 lg:w-80 w-full h-auto rounded-xl mb-6"
-                  />
+                  {/* First paragraph with floating image */}
+                  <div className="md:float-right md:ml-8 md:mb-4 md:w-64 lg:w-80 mb-6">
+                    <img 
+                      src={chessImage} 
+                      alt="Angelina Fransson spelar schack" 
+                      className="w-full h-auto rounded-xl"
+                    />
+                    <p className="text-sm text-muted-foreground mt-2 text-center italic">
+                      Foto: Maria Emilianova
+                    </p>
+                  </div>
 
                   <p className="text-lg leading-relaxed">
                     Min schackhistoria började när jag första gången såg min far sitta med ett bräde och en schackbok när jag knappt kunde gå. Många av barndomens timmar spenderades vid brädet, ibland med en bok, ibland med far i de småländska skogarna.
@@ -52,6 +57,9 @@ const Schack = () => {
                       här
                     </a>.
                   </p>
+
+                  {/* Clear float before stats */}
+                  <div className="clear-both"></div>
 
                   {/* Highlighted Stats */}
                   <div className="grid grid-cols-3 gap-4 py-8">
