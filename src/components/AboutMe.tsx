@@ -1,7 +1,6 @@
 import { Award, Briefcase, Lightbulb } from "lucide-react";
 import { useMemo } from "react";
-import angelinaAbout from "@/assets/angelina-about.png";
-
+import angelinaAbout from "@/assets/angelina-about-new.png";
 const calculateExperience = () => {
   const start = new Date(2018, 2, 16);
   const today = new Date();
@@ -59,31 +58,13 @@ const AboutMe = () => {
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Vem är jag?
             </h2>
-            {/* Magnifying glass - matching cursor style */}
-            <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto">
-              {/* Handle */}
-              <svg 
-                className="absolute w-full h-full" 
-                viewBox="0 0 100 100" 
-                style={{ overflow: 'visible' }}
-              >
-                <rect 
-                  x="78" y="78" 
-                  width="40" height="10" 
-                  rx="5" ry="5" 
-                  fill="#3a2a1a" 
-                  transform="rotate(45 78 78)"
-                />
-              </svg>
+            {/* Portrait bubble */}
+            <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
+              {/* Decorative ring */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 -rotate-6"></div>
               
-              {/* Circle frame */}
-              <div 
-                className="absolute inset-0 rounded-full" 
-                style={{ border: '8px solid #3a2a1a' }}
-              ></div>
-              
-              {/* Image inside */}
-              <div className="absolute inset-2 rounded-full overflow-hidden">
+              {/* Image container */}
+              <div className="absolute inset-2 rounded-full overflow-hidden shadow-soft-lg border-4 border-background">
                 <img 
                   src={angelinaAbout} 
                   alt="Angelina" 
