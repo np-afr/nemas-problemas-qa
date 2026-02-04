@@ -61,9 +61,9 @@ const AboutMe = () => {
             </h2>
             {/* Magnifying glass */}
             <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto md:ml-20">
-              {/* Handle - bottom left */}
-              <div className="absolute -left-10 md:-left-12 bottom-2 md:bottom-4 rotate-[-45deg]">
-                <div className="w-14 md:w-16 h-4 md:h-5 bg-foreground rounded-full"></div>
+              {/* Handle - connected to bottom left of circle */}
+              <div className="absolute -left-14 md:-left-16 bottom-0 md:bottom-1 rotate-[-45deg] origin-right">
+                <div className="w-20 md:w-24 h-4 md:h-5 bg-foreground rounded-full"></div>
               </div>
               
               {/* Black circle frame */}
