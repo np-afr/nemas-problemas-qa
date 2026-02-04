@@ -59,10 +59,19 @@ const AboutMe = () => {
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Vem är jag?
             </h2>
-            {/* Portrait bubble */}
-            <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 animate-pulse"></div>
-              <div className="absolute inset-2 rounded-full bg-background shadow-soft-lg overflow-hidden">
+            {/* Magnifying glass */}
+            <div className="relative w-56 h-56 md:w-64 md:h-64 mx-auto">
+              {/* Handle - positioned to the left */}
+              <div className="absolute left-0 top-1/2 -translate-x-[85%] -translate-y-1/2 rotate-[-45deg] origin-right">
+                <div className="w-16 md:w-20 h-5 md:h-6 bg-gradient-to-r from-primary/60 to-primary rounded-full shadow-md"></div>
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-8 md:h-10 bg-primary rounded-sm"></div>
+              </div>
+              {/* Lens frame */}
+              <div className="absolute inset-0 rounded-full border-[6px] md:border-8 border-primary shadow-soft-lg"></div>
+              {/* Lens reflection */}
+              <div className="absolute top-4 right-6 w-8 h-8 md:w-10 md:h-10 bg-white/30 rounded-full blur-sm"></div>
+              {/* Image inside lens */}
+              <div className="absolute inset-[6px] md:inset-2 rounded-full overflow-hidden bg-background">
                 <img 
                   src={angelinaAbout} 
                   alt="Angelina" 
