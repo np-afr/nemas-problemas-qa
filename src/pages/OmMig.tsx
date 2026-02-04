@@ -19,7 +19,7 @@ const OmMig = () => {
                     Jag är en mångsysslare som gillar att nörda ner mig i saker - oavsett om det gäller träning, teknik eller surdeg. För mig är den röda tråden problemlösning och utmaningar, helst kombinerat. Just nu går det mesta av tiden till Nemas Problemas AB och klasserna på SATS, men det finns alltid tid till att lära sig något nytt och just nu är det keramik som står på schemat.
                   </p>
                   <p className="text-lg text-muted-foreground mb-4">
-                    Då mitt arbetsliv är väldigt digitalt, försöker jag spendera resterande timmar på dygnet analogt - med böcker, träning, natur och människor.
+                    Då mitt arbetsliv är väldigt digitalt, försöker jag spendera resterande timmar på dygnet analogt - med böcker, träning, natur och människor. Så har du boktips och naturområden i närheten - de mottages gärna!
                   </p>
                   <div className="w-16 h-1 bg-accent rounded-full mx-auto md:mx-0"></div>
                 </div>
