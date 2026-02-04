@@ -1,10 +1,17 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Mail, MapPin, Linkedin, Instagram } from "lucide-react";
 
 const Kontakt = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Kontakt"
+        description="Kontakta Angelina Fransson för QA-konsultation, schackevent eller träningssamarbeten. Baserad i Malmö, Sverige."
+        keywords="kontakt, QA konsult, Malmö, samarbete"
+        canonicalPath="/kontakt"
+      />
       <Header />
       <main className="pt-20 md:pt-24">
         {/* Hero Section */}

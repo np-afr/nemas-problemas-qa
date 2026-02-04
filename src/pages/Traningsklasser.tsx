@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Dumbbell, Heart, Users, Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,6 +8,12 @@ import { Link } from "react-router-dom";
 const Traningsklasser = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Träningsklasser"
+        description="Träna med Angelina Fransson som instruktör på SATS. Hitta mina klasser och boka din plats."
+        keywords="träning, SATS, gruppträning, instruktör, Malmö"
+        canonicalPath="/traningsklasser"
+      />
       <Header />
       <main className="pt-20 md:pt-24">
         {/* Hero Section */}

@@ -1,10 +1,17 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import angelinaPortrait from "@/assets/angelina-portrait.png";
 
 const OmMig = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Om mig"
+        description="Lär känna Angelina Fransson — mångsysslare, QA-konsult, schackspelare och träningsinstruktör. Problemlösning och utmaningar är min grej."
+        keywords="Angelina Fransson, om mig, QA konsult, schack, träning"
+        canonicalPath="/om-mig"
+      />
       <Header />
       <main className="pt-32 pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
