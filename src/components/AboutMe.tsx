@@ -1,6 +1,6 @@
 import { Award, Briefcase, Lightbulb } from "lucide-react";
-
 import { useMemo } from "react";
+import angelinaAbout from "@/assets/angelina-about.png";
 
 const calculateExperience = () => {
   const start = new Date(2018, 2, 16);
@@ -59,6 +59,17 @@ const AboutMe = () => {
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Vem är jag?
             </h2>
+            {/* Portrait bubble */}
+            <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 animate-pulse"></div>
+              <div className="absolute inset-2 rounded-full bg-background shadow-soft-lg overflow-hidden">
+                <img 
+                  src={angelinaAbout} 
+                  alt="Angelina" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Personal intro */}
