@@ -31,11 +31,8 @@ const Schack = () => {
                     <img 
                       src={chessImage} 
                       alt="Angelina Fransson spelar schack" 
-                      className="w-full h-auto rounded-xl"
+                      className="w-full h-auto rounded-2xl shadow-soft-lg border border-border/30"
                     />
-                    <p className="text-sm text-muted-foreground mt-2 text-center italic">
-                      Foto: Maria Emilianova
-                    </p>
                   </div>
 
                   <p className="text-lg leading-relaxed">
