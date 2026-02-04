@@ -61,13 +61,24 @@ const AboutMe = () => {
             </h2>
             {/* Magnifying glass */}
             <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto">
-              {/* Handle - connected directly to circle */}
-              <div className="absolute -left-12 md:-left-14 -bottom-3 md:-bottom-3 rotate-[-45deg] origin-right">
-                <div className="w-20 md:w-24 h-4 md:h-5 bg-foreground rounded-full translate-x-3"></div>
-              </div>
+              {/* Handle */}
+              <svg 
+                className="absolute w-full h-full" 
+                viewBox="0 0 100 100" 
+                style={{ overflow: 'visible' }}
+              >
+                {/* Handle bar */}
+                <line 
+                  x1="15" y1="85" 
+                  x2="-20" y2="120" 
+                  stroke="hsl(var(--foreground))" 
+                  strokeWidth="6" 
+                  strokeLinecap="round"
+                />
+              </svg>
               
-              {/* Black circle frame */}
-              <div className="absolute inset-0 rounded-full border-[6px] md:border-8 border-foreground shadow-lg"></div>
+              {/* Circle frame */}
+              <div className="absolute inset-0 rounded-full border-[6px] md:border-8 border-foreground"></div>
               
               {/* Image inside */}
               <div className="absolute inset-[6px] md:inset-2 rounded-full overflow-hidden">
