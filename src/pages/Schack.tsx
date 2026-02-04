@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import chessImage from "@/assets/chess-angelina.png";
 import { Link } from "react-router-dom";
@@ -7,6 +8,12 @@ import { Link } from "react-router-dom";
 const Schack = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Schack"
+        description="Angelina Fransson — före detta landslagsspelare i schack med 4 OS och 10 år i Sveriges damlandslag. Skribent för Tidskrift för Schack."
+        keywords="schack, schackspelare, Sveriges landslag, Schack-OS, Tidskrift för Schack"
+        canonicalPath="/schack"
+      />
       <Header />
       <main className="pt-20 md:pt-24">
         {/* Hero Section */}

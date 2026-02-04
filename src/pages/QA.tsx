@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Bug, Users, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -148,6 +149,12 @@ const QA = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="QA & Testning"
+        description="Professionell QA-konsult med expertis inom testautomatisering, Cypress och manuell testning. Över 6 års erfarenhet av kvalitetssäkring."
+        keywords="QA konsult, testautomatisering, Cypress, manuell testning, kvalitetssäkring, Sverige"
+        canonicalPath="/Testning"
+      />
       <Header />
       <main className="pt-20 md:pt-24">
         {/* Hero Section */}
