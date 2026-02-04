@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/nemas-problemas-logo.png";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col bg-gradient-hero overflow-hidden pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto ">
+        <div className="max-w-5xl mx-auto">
           {/* Logo */}
           <div
             style={{
@@ -22,34 +23,52 @@ const Hero = () => {
             />
           </div>
 
-          {/* Main Headline */}
-          <h1
-            className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-6 opacity-0 animate-fade-in leading-tight"
-            style={{
-              animationDelay: "0.3s",
-            }}
-          >
-            <span className="text-gradient">Hjälper team att skapa stabila och pålitliga system.</span>
-          </h1>
+          {/* Content with profile image */}
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            {/* Profile Photo */}
+            <div
+              className="opacity-0 animate-fade-in flex-shrink-0"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <img
+                src={profilePhoto}
+                alt="Angelina - QA Konsult"
+                className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover object-top shadow-xl border-4 border-card"
+              />
+            </div>
 
-          {/* CTA Buttons */}
-          <div
-            className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in"
-            style={{
-              animationDelay: "0.5s",
-            }}
-          >
-            <Link to="/kontakt">
-              <Button variant="brand" size="xl">
-                Let's talk!
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link to="/om-mig">
-              <Button variant="brand-outline" size="xl">
-                Läs mer om mig
-              </Button>
-            </Link>
+            {/* Text Content */}
+            <div className="text-center lg:text-left flex-1">
+              {/* Main Headline */}
+              <h1
+                className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 opacity-0 animate-fade-in leading-tight"
+                style={{
+                  animationDelay: "0.3s",
+                }}
+              >
+                <span className="text-gradient">Hjälper team att skapa stabila och pålitliga system.</span>
+              </h1>
+
+              {/* CTA Buttons */}
+              <div
+                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start opacity-0 animate-fade-in"
+                style={{
+                  animationDelay: "0.5s",
+                }}
+              >
+                <Link to="/kontakt">
+                  <Button variant="brand" size="xl">
+                    Let's talk!
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link to="/om-mig">
+                  <Button variant="brand-outline" size="xl">
+                    Läs mer om mig
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
