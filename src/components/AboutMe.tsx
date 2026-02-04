@@ -59,7 +59,7 @@ const AboutMe = () => {
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8">
               Vem är jag?
             </h2>
-            {/* Magnifying glass */}
+            {/* Magnifying glass - matching cursor style */}
             <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto">
               {/* Handle */}
               <svg 
@@ -67,21 +67,23 @@ const AboutMe = () => {
                 viewBox="0 0 100 100" 
                 style={{ overflow: 'visible' }}
               >
-                {/* Handle bar */}
-                <line 
-                  x1="15" y1="85" 
-                  x2="-20" y2="120" 
-                  stroke="hsl(var(--foreground))" 
-                  strokeWidth="6" 
-                  strokeLinecap="round"
+                <rect 
+                  x="72" y="72" 
+                  width="45" height="12" 
+                  rx="6" ry="6" 
+                  fill="#3a2a1a" 
+                  transform="rotate(45 72 72)"
                 />
               </svg>
               
               {/* Circle frame */}
-              <div className="absolute inset-0 rounded-full border-[6px] md:border-8 border-foreground"></div>
+              <div 
+                className="absolute inset-0 rounded-full" 
+                style={{ border: '8px solid #3a2a1a' }}
+              ></div>
               
               {/* Image inside */}
-              <div className="absolute inset-[6px] md:inset-2 rounded-full overflow-hidden">
+              <div className="absolute inset-2 rounded-full overflow-hidden">
                 <img 
                   src={angelinaAbout} 
                   alt="Angelina" 
