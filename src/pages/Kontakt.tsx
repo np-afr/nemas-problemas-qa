@@ -42,10 +42,10 @@ const Kontakt = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">E-post</h3>
                       <a 
-                        href="mailto:hej@nemasproblemas.com"
+                        href="mailto:info@nemasproblemas.com"
                         className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
                       >
-                        hej@nemasproblemas.com
+                        info@nemasproblemas.com
                       </a>
                     </div>
                   </div>

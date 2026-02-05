@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, MessageSquare, ArrowRight } from "lucide-react";
+import { Mail, MessageSquare } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -26,7 +26,7 @@ const Contact = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:hej@nemasproblemas.com">
+                <a href="mailto:info@nemasproblemas.com">
                   <Button variant="brand" size="xl" className="bg-accent hover:bg-accent/90">
                     <Mail className="mr-2 h-5 w-5" />
                     Skicka ett mail
