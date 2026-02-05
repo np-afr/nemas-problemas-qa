@@ -6,6 +6,7 @@ import { CheckCircle, Bug, Users, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import angelinaQA from "@/assets/angelina-qa.png";
 
 const calculateYearsOfExperience = () => {
   const start = new Date(2018, 2, 16);
@@ -160,40 +161,54 @@ const QA = () => {
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                Kvalitetssäkring som gör skillnad
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                Med över {years} års erfarenhet hjälper jag företag att leverera mjukvara med högre kvalitet, färre
-                buggar och nöjdare användare.
-              </p>
+            <div className="max-w-5xl mx-auto">
+              <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                {/* Text content */}
+                <div className="flex-1 text-center md:text-left">
+                  <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+                    Kvalitetssäkring som gör skillnad
+                  </h1>
+                  <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                    Med över {years} års erfarenhet hjälper jag företag att leverera mjukvara med högre kvalitet, färre
+                    buggar och nöjdare användare.
+                  </p>
 
-              {/* Main competencies */}
-              <div className="mb-10">
-                <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Huvudfokus</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <div className="flex items-center gap-2 text-foreground">
-                    <span className="w-2 h-2 rounded-full bg-accent"></span>
-                    <span className="font-medium">Cypress</span>
+                  {/* Main competencies */}
+                  <div className="mb-10">
+                    <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Huvudfokus</p>
+                    <div className="flex flex-wrap justify-center md:justify-start gap-4">
+                      <div className="flex items-center gap-2 text-foreground">
+                        <span className="w-2 h-2 rounded-full bg-accent"></span>
+                        <span className="font-medium">Cypress</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-foreground">
+                        <span className="w-2 h-2 rounded-full bg-accent"></span>
+                        <span className="font-medium">Testautomatisering</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-foreground">
+                        <span className="w-2 h-2 rounded-full bg-accent"></span>
+                        <span className="font-medium">Manuell testning</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-foreground">
-                    <span className="w-2 h-2 rounded-full bg-accent"></span>
-                    <span className="font-medium">Testautomatisering</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-foreground">
-                    <span className="w-2 h-2 rounded-full bg-accent"></span>
-                    <span className="font-medium">Manuell testning</span>
-                  </div>
+
+                  <Link to="/kontakt">
+                    <Button variant="brand" size="xl">
+                      Boka ett samtal
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
+                </div>
+
+                {/* Image */}
+                <div className="flex-shrink-0">
+                  <img 
+                    src={angelinaQA} 
+                    alt="Angelina" 
+                    className="w-64 md:w-80 h-auto rounded-xl"
+                  />
                 </div>
               </div>
-
-              <Link to="/kontakt">
-                <Button variant="brand" size="xl">
-                  Boka ett samtal
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
             </div>
           </div>
         </section>
