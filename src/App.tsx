@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import QA from "./pages/QA";
 import Schack from "./pages/Schack";
 import Traningsklasser from "./pages/Traningsklasser";
-import OmMig from "./pages/OmMig";
 import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
 
@@ -24,7 +23,6 @@ const App = () => (
           <Route path="/Testning" element={<QA />} />
           <Route path="/schack" element={<Schack />} />
           <Route path="/traningsklasser" element={<Traningsklasser />} />
-          <Route path="/om-mig" element={<OmMig />} />
           <Route path="/kontakt" element={<Kontakt />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

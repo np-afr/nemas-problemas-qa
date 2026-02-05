@@ -1,9 +1,16 @@
-import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import logo from "@/assets/nemas-problemas-logo.png";
 
 const Hero = () => {
+  const scrollToAbout = () => {
+    const element = document.getElementById("om-mig");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col bg-gradient-hero overflow-hidden pt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -45,11 +52,9 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link to="/om-mig">
-              <Button variant="brand-outline" size="xl">
-                Läs mer om mig
-              </Button>
-            </Link>
+            <Button variant="brand-outline" size="xl" onClick={scrollToAbout}>
+              Läs mer om mig
+            </Button>
           </div>
         </div>
       </div>
