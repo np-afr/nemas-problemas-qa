@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import { Mail, MapPin, Linkedin, Instagram } from "lucide-react";
+import { Mail, MapPin, Linkedin } from "lucide-react";
 
 const Kontakt = () => {
   return (
@@ -77,22 +77,7 @@ const Kontakt = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
-                      <Instagram className="h-5 w-5 text-accent" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">Instagram</h3>
-                      <a
-                        href="https://www.instagram.com/coach.fransson/"
-                        target="_blank"
-                        rel="noopener"
-                        className="text-accent font-semibold underline underline-offset-4 decoration-2 hover:text-accent/80 transition-colors"
-                      >
-                        @coach.fransson
-                      </a>
-                    </div>
-                  </div>
+                
                 </div>
               </div>
             </div>

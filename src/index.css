@@ -25,7 +25,7 @@
     --muted: 38 30% 90%;
     --muted-foreground: 25 15% 45%;
 
-    --accent: 24 85% 50%;
+    --accent: 25 79% 51%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,14 +33,14 @@
 
     --border: 35 20% 88%;
     --input: 35 20% 88%;
-    --ring: 24 85% 50%;
+    --ring: 25 79% 51%;
 
     --radius: 0.75rem;
 
     /* Brand colors */
-    --brand-orange: 24 85% 50%;
-    --brand-orange-light: 24 85% 60%;
-    --brand-orange-dark: 24 85% 40%;
+    --brand-orange: 25 79% 51%;
+    --brand-orange-light: 25 79% 59%;
+    --brand-orange-dark: 25 79% 43%;
     --brand-cream: 35 30% 96%;
     --brand-warm-gray: 25 15% 45%;
   }

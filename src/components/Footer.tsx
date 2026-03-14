@@ -1,5 +1,5 @@
 import { Linkedin, Mail } from "lucide-react";
-import logo from "@/assets/nemas-problemas-logo.png";
+import logo from "@/assets/cropped-logo-watermark.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="Nemas Problemas"
-              className="h-12 w-auto mb-4 brightness-0 invert opacity-90 mx-auto md:mx-0"
+              className="h-4 md:h-4 w-auto"
             />
             <p className="text-primary-foreground/70 max-w-sm">
               Erfaren QA-konsult som hjälper team leverera mjukvara utan bekymmer.
